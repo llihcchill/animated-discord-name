@@ -19,7 +19,7 @@ for nick in nickname_frames:
 while(True):
   for nick in nickname_array:
     request = requests.patch(f"https://discord.com/api/v9/guilds/{server_id}/members/@me", headers=headers, json=nick)
-    time.sleep(1)
+    time.sleep(10)
 
 
 
